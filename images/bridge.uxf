@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>550</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Document
+--
++ createTitle(): Title
++ createParagraph(): Paragraph</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>30</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Title
+--
++ setContent(String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>270</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Paragraph
+--
++ setContent(String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>700</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>AsciiDocDocument
+--
+- writer: Writer
+--
++ AsciiDocDocument(Writer)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>700</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>DocBookDocument
+--
+- writer: Writer
+--
++ DocBookDocument(Writer)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>420</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>DocBookParagraph
+--
+- writer: Writer
+--
++ DocBookParagraph(Writer)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>420</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>AsciiDocParagraph
+--
+- writer: Writer
+--
++ AsciiDocParagraph(Writer)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>350</y>
+      <w>140</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>630</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>110</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>350</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>630</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>130</x>
+      <y>110</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>180</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>DocBookTitle
+--
+- writer: Writer
+--
++ DocBookTitle(Writer)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>180</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>AsciiDocTitle
+--
+- writer: Writer
+--
++ AsciiDocTitle(Writer)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>150</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>DocumentWriter
+--
+- document: Document
+--
++ DocumentWriter(Document)
++ writeTitle(String)
++ writeParagraph(String)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
