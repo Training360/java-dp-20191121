@@ -1,0 +1,19 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox fx:controller="mediator.MediatorController"
+      xmlns:fx="http://javafx.com/fxml" styleClass="flow-pane">
+
+    <ListView fx:id="fromListView"/>
+
+    <VBox minWidth="200">
+        <Button text="Add" onAction="#addButtonHasPressed"/>
+        <Button text="Add all" onAction="#addAllButtonHasPressed"/>
+        <Button text="Remove" onAction="#removeButtonHasPressed"/>
+        <Button text="Remove all" onAction="#removeAllButtonHasPressed"/>
+    </VBox>
+
+    <ListView fx:id="toListView"/>
+
+</HBox>
